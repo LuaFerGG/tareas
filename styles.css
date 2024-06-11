@@ -4,8 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     text-decoration: none;
-
-
 }
 
 .container {
@@ -28,6 +26,7 @@
 
 table {
     width: 100%;
+    /*  what is border-collapse? XDDD    */
     border-collapse: collapse;
     border-radius: 15px;
     background-color: #e7fcd9;
@@ -62,11 +61,15 @@ input::placeholder {
     padding-left: 10px;
 }
 
+/* add input::focus */
+/* and accesibility options */
+/* input::hover for example*/
+
 h2 {
     margin: 25px;
     text-align: center;
     color: #486944;
-
+    /* text-size: 10rem  DEFINE the text size it's important    */
 }
 
 h3 {
@@ -79,14 +82,16 @@ h3 {
  button {
     width: 150px;
     margin-top: 15px;
+    /* what's flex-basis??? XD      */
     flex-basis: 48%;
-
-    font-size: 15px;
+    /* it's better to use rem rather pixels. This helps to make better definitions in the different devices  */
+    font-size: 2rem;
     background-color: #ffbe30;
     color: #0c1944;
     height: 40px;
     border-radius: 15px;
     border: 0;
     outline: 0;
+    /* excellent. this helps to understand a call to action      */
     cursor: pointer;
  }

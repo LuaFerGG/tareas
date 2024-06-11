@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- read the following article -->
+    <!-- https://www.w3schools.com/css/css_rwd_viewport.asp -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla de Plantas</title>
     <link rel="stylesheet" href="styles.css">
@@ -28,8 +30,10 @@
    
      <br>
             <!-- Formulario para agregar una nueva planta -->
-
-            <form id="addPlantForm">
+            <!-- It's important to add the action attribute as good practice -->
+            <!-- action="/enviar-data" -->
+            <!-- In this case, is the same page with # 'cause is validating javascript action="#" -->
+            <form id="addPlantForm" action="#">
                 <h3>Agregar Nueva Planta</h3>
                 <input type="text" id="nombre" placeholder="Nombre" name="nombre" required>
                 <input type="text" id="nombreCientifico" placeholder="Nombre Cientifico" name="nombreCientifico" required>
